@@ -1,0 +1,31 @@
+<h1>Projeto 03 Funcional Herança e Interface</h1>
+<hr>
+
+<label>Código:</label><br>
+<input type='number' name='id' [(ngModel)]='aluno.id' placeholder="Digite o código"><br>
+
+<label>Nome:</label><br>
+<input type='text' name='nome' [(ngModel)]='aluno.nome' placeholder="Digite o Nome"><br>
+
+<label>Disciplina:</label><br>
+<input type='text' name='disciplina' [(ngModel)]='aluno.disciplina' placeholder="Digite a disciplina"><br>
+
+<label>Nota 1:</label><br>
+<input type='number' name='nota1' [(ngModel)]='aluno.nota1' placeholder="Digite a nota 1"><br>
+
+<label>Nota 2:</label><br>
+<input type='number' name='nota2' [(ngModel)]='aluno.nota2' placeholder="Digite a nota 2"><br>
+
+<br>
+
+<button (click)='calcularMedia();'>Calcular Média</button> - 
+<button (click)='calcularSituacao();'>Calcular Situação</button> - 
+<button (click)='calcularFuncionalSomaItem();'>Calcular Funcional Soma item</button> - 
+<button (click)='calcularFuncionalItem();'>Calcular Funcional item</button>
+
+<br>
+Aluno: {{aluno|json}}
+<br>
+Soma notas por aluno: {{soma|json}}
+<br>
+Soma tudo: {{somaTudo|json}}
