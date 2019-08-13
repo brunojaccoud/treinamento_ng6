@@ -45,3 +45,23 @@ npm i npm-registry-client
 ng add angular-bootstrap-md --comando disponível a partir do angular8 - adiciona todas as bibliotecas no angular.json
 
 https://fontawesome.com/ --biblioteca de ícones (instalada com o bootstrap-md)
+
+
+distros linux:
+https://elementary.io/pt_BR/
+https://www.linuxdescomplicado.com.br/2013/10/elementary-os-o-que-uma-distribuicao.html
+https://www.linuxdescomplicado.com.br/2015/11/saiba-como-personalizar-o-ubuntuelementary-os-em-alguns-cliques.html
+https://pt.stackoverflow.com/questions/8678/qual-o-linux-mais-completo-para-programadores
+
+APIs DOS CORREIOS
+https://postmon.com.br/
+
+Bibliotecas de imagens e vídeos
+http://www.jarallax.com/demo/
+npm i jarallax --intalar
+
+FONTS OPEN - Google
+https://fonts.google.com/ -- font inserida no styles.css do src
+
+Site de imagens
+https://wall.alphacoders.com/?lang=Portuguese
