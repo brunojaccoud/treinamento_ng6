@@ -24,3 +24,9 @@ instalando o bootstrap
 npm i bootstrap@4.3.1 -- instala a versão especificada 
 npm i bootstrap -- instala a versão mais recente
 npm i jquery
+
+instalando e configurando json server --criado um projeto externo
+npm i json-server -- instala
+json-server cliente.json --inicia
+
+https://www.getpostman.com/
