@@ -29,5 +29,32 @@
 
             </mdb-card>
         </div>
+        <div class="col-md-6">
+            <mdb-card>
+                <mdb-card-body>
+                    <mdb-card-title class="text-center">
+                        <h3>Lista de Clientes</h3>
+                    </mdb-card-title>
+
+                    <table mdbTable striped="true" bordered="true" hover="true" small="true">
+                        <thead class="black white-text">
+                            <tr class="text-center">
+                                <th>Código</th>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor='let item of clienteLista'>
+                                <td>{{item.id}}</td>
+                                <td>{{item.nome}}</td>
+                                <td>{{item.email}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </mdb-card-body>
+            </mdb-card>
+        </div>
     </div>
 </div>
