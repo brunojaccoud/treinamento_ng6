@@ -34,3 +34,14 @@ https://www.getpostman.com/ -- serve para testar o fluxo de dados e conexões de
 
 serviços --nome dos métodos em inglês
 class --nome dos métodos em português - os nomes não podem ser iguais
+
+material design
+https://mdbootstrap.com/docs/angular/css/colors/ -- info das bibliotecas
+
+//REGISTRAR O PROJETO
+npm i npm-registry-client
+
+//ADICIONAR O MATERIAL DESIGN AO PROJETO
+ng add angular-bootstrap-md --comando disponível a partir do angular8 - adiciona todas as bibliotecas no angular.json
+
+https://fontawesome.com/ --biblioteca de ícones (instalada com o bootstrap-md)

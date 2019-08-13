@@ -1,15 +1,15 @@
 import { Endereco } from './endereco';
 export class Cliente{
 
-    idCliente: number;
+    id: number;
     nome: string;
     email: string;
 
     //RELACIONAMENTO ONE TO ONE
     endereco: Endereco;
 
-    constructor(idCliente?:number, nome?:string, email?:string){
-        this.idCliente = idCliente;
+    constructor(id?:number, nome?:string, email?:string){
+        this.id = id;
         this.nome = nome;
         this.email = email;
     }

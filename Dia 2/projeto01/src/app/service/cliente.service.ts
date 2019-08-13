@@ -4,11 +4,10 @@ import { Cliente } from 'src/app/model/cliente';
 
 
 //CONSTANTE DO SERVIÇO
-const URL: string='http://localhost:3000/cliente/';
+const URL: string='http://localhost:3000/cliente';
 
 @Injectable()
 export class ClienteService{
-
     constructor(private http: HttpClient){
 
     }
@@ -35,6 +34,6 @@ export class ClienteService{
 
     //ALTERAR
     public update(cliente: Cliente){
-        return this.http.put<Cliente>(`${URL}/${cliente.idCliente}`, cliente);
+        return this.http.put<Cliente>(`${URL}/${cliente.id}`, cliente);
     }
 }
