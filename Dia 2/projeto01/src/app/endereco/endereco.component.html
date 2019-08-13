@@ -2,10 +2,9 @@
     <mdb-card>
         <mdb-card-body>
             <mdb-card-title>
-                <h4 class="text-center">Endereço</h4>
+                <h4 class="text-center"><i class="fas fa-map-marker-alt ml-3"></i>Endereço</h4>
             </mdb-card-title>
 
-            <label><i class="fas fa-map-marker-alt"></i> CEP:</label>
             <div class="row">
                 <input type="number" #cep [(ngModel)]='endereco.cep' class="form-control col-md-8 ml-3" placeholder="Digite o CEP">
                 <button (click)='buscarCep();' mdbBtn color='success' size="sm" class="mb-2">Encontrar CEP</button>

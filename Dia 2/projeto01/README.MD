@@ -55,3 +55,17 @@ https://pt.stackoverflow.com/questions/8678/qual-o-linux-mais-completo-para-prog
 
 APIs DOS CORREIOS
 https://postmon.com.br/
+
+Bibliotecas de imagens e vídeos
+http://www.jarallax.com/demo/
+npm i jarallax --intalar
+
+FONTS OPEN - Google
+https://fonts.google.com/ -- font inserida no styles.css do src
+
+Site de imagens
+https://wall.alphacoders.com/?lang=Portuguese
+https://images6.alphacoders.com/728/thumb-1920-728101.png
+https://images8.alphacoders.com/941/thumb-1920-941429.jpg
+https://images5.alphacoders.com/428/thumb-1920-428963.png
+https://images5.alphacoders.com/423/thumb-1920-423176.jpg
