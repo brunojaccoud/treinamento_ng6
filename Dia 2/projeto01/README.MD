@@ -65,3 +65,6 @@ https://fonts.google.com/ -- font inserida no styles.css do src
 
 Site de imagens
 https://wall.alphacoders.com/?lang=Portuguese
+
+Cores em hexadecimal
+https://flatuicolors.com
