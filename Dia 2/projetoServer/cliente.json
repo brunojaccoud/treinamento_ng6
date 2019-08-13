@@ -1,19 +1,19 @@
 {
-    "cliente":[
-        {
-            "idCliente": 100,
-            "nome": "Bruno",
-            "email": "bmjda23@gmail.com"
-        },
-        {
-            "idCliente": 101,
-            "nome": "Yanne",
-            "email": "yanne@gmail.com"
-        },
-        {
-            "idCliente": 102,
-            "nome": "Leticia",
-            "email": "leticia@gmail.com"
-        }
-    ]
+  "cliente": [
+    {
+      "idCliente": 100,
+      "nome": "Bruno",
+      "email": "bmjda23@gmail.com"
+    },
+    {
+      "idCliente": 101,
+      "nome": "Yanne",
+      "email": "yanne@gmail.com"
+    },
+    {
+      "idCliente": 102,
+      "nome": "Leticia",
+      "email": "leticia@gmail.com"
+    }
+  ]
 }

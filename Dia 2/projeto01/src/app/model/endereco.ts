@@ -8,6 +8,7 @@ export class Endereco{
     estado: string;
     cep: string;
 
+    //RELACIONAMENTO ONE TO ONE
     client: Cliente;
 
     constructor(idEndereco?:number, logradouro?:string, bairro?:string, cidade?:string, estado?:string, cep?:string){

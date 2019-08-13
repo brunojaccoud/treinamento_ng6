@@ -5,6 +5,7 @@ export class Cliente{
     nome: string;
     email: string;
 
+    //RELACIONAMENTO ONE TO ONE
     endereco: Endereco;
 
     constructor(idCliente?:number, nome?:string, email?:string){

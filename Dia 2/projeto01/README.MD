@@ -28,5 +28,9 @@ npm i jquery
 instalando e configurando json server --criado um projeto externo
 npm i json-server -- instala
 json-server cliente.json --inicia
+https://www.npmjs.com/package/json-server -- outras infos
 
-https://www.getpostman.com/
+https://www.getpostman.com/ -- serve para testar o fluxo de dados e conexões de url - simulando requests
+
+serviços --nome dos métodos em inglês
+class --nome dos métodos em português - os nomes não podem ser iguais
