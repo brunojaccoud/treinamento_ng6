@@ -1,3 +1,4 @@
+import { EnderecoService } from './service/endereco.service';
 import { ClienteService } from './service/cliente.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -23,7 +24,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
-  providers: [ClienteService],
+  providers: [ClienteService, EnderecoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

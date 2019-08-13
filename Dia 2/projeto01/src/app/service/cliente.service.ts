@@ -4,7 +4,7 @@ import { Cliente } from 'src/app/model/cliente';
 
 
 //CONSTANTE DO SERVIÇO
-const URL: string='http://localhost:3000/cliente';
+const URL: string='http://localhost:3000/cliente'; //não é obrigatório tipar const
 
 @Injectable()
 export class ClienteService{
