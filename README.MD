@@ -70,6 +70,8 @@ Site de imagens
 https://wall.alphacoders.com/?lang=Portuguese
 
 #===================== DIA3 =====================#
+
+***********************************************
 MONGO DB
 sudo mongod --ativa o servidor do mongo
 sudo mongo --ativa o banco
@@ -197,3 +199,33 @@ npm i mongod --save         -banco
 npm i nodemon --save        - servidor para rodar a aplicação node
 
 nodemon server.js --startando o server criado
+
+******************
+Firebase Google 
+https://console.firebase.google.com
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDADfOS94tI24ACjPQU7xlbAhfu9hXN8Dg",
+    authDomain: "projetobmjda.firebaseapp.com",
+    databaseURL: "https://projetobmjda.firebaseio.com",
+    projectId: "projetobmjda",
+    storageBucket: "",
+    messagingSenderId: "679238946514",
+    appId: "1:679238946514:web:44184a6d489ccfa4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+instalando firebase no projeto
+npm i firebase --save		-conecta ao firebase
+npm i angularfire2 --save	-conecta ao banco
+
