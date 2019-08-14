@@ -18,6 +18,7 @@ export class ProdutoComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.listar();
   }
 
   public listar(){

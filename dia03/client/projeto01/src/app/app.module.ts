@@ -1,4 +1,3 @@
-import { ProdutoService } from './service/produto.service';
 import { UsuarioService } from './service/usuario.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
