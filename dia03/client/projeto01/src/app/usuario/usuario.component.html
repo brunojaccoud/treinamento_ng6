@@ -60,8 +60,6 @@
 
 </form>
 
-<br>
-
 <div *ngIf='msg'>
     {{msg}}
 </div>
@@ -69,9 +67,9 @@
 <br>
 
 Lista de Usuários:<br>
-<li *ngFor='let item of usuarioLista'>
+<!--li *ngFor='let item of usuarioLista'>
     {{item._id}} - {{item.nome}} - {{item.email}}
-</li>
+</li-->
 
 <table border="1">
     <thead>
@@ -91,3 +89,5 @@ Lista de Usuários:<br>
         </tr>
     </tbody>
 </table>
+
+<hr>

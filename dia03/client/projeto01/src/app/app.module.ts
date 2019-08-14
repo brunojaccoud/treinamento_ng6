@@ -12,6 +12,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from './../environments/environment';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { environment } from './../environments/environment';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent]

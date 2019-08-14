@@ -1,3 +1,42 @@
-<li *ngFor='let item of produtoLista'>
+<h2>Gravação no Firebase</h2>
+<br>
+
+<label>Código:</label><br>
+<input type="number" #id [(ngModel)]="produto.id" placeholder="Digite o código"><br>
+
+<label>Nome do produto:</label><br>
+<input type="text" #nome [(ngModel)]="produto.nome" placeholder="Digite o nome"><br>
+
+<label>Preço:</label><br>
+<input type="number" #preco [(ngModel)]="produto.preco" placeholder="Digite o preço"><br>
+
+<label>Imagem do produto:</label><br>
+<input type="text" #imagem [(ngModel)]="produto.imagem" placeholder="Digite a url da imagem"><br>
+
+<button (click)='gravar();'>Gravar</button>
+
+<hr>
+
+Lista Produtos:
+<!--li *ngFor='let item of produtoLista'>
     {{item|json}}
-</li>
+</li-->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Codigo:</th>
+            <th>Nome:</th>
+            <th>Preço:</th>
+            <th>Imagem:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let item of produtoLista'>
+            <td>{{item.codigo}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.preco}}</td>
+            <td>{{item.imagem}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -28,4 +28,10 @@ export class ProdutoComponent implements OnInit {
     })
   }
 
+  public gravar(){
+    this.produtoCollection.add({ ...this.produto}).then(res => { console.log("Produto gravado com sucesso!");});
+    this.listar();
+    this.produto = new Produto();
+  }
+
 }
