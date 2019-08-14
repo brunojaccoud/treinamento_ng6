@@ -1,0 +1,23 @@
+<h1>Projeto Node Mongodb</h1>
+<br>
+
+<h2>Usuário</h2>
+<br>
+
+<label>Código:</label>
+<input type="number" #codigo [(ngModel)]='usuario.codigo' placeholder="Digite o código"><br>
+
+<label>Nome:</label>
+<input type="string" #nome [(ngModel)]='usuario.nome' placeholder="Digite o nome"><br>
+
+<label>E-mail:</label>
+<input type="string" #email [(ngModel)]='usuario.email' placeholder="Digite o email"><br>
+
+<br>
+
+<button (click)='gravar();'>Gravar</button>
+<br>
+
+<div *ngIf='msg'>
+    {{msg}}
+</div>

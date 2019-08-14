@@ -135,7 +135,7 @@ db.usuario.insertOne(
 
 //apagar dados numa collection
 db.usuario.remove({
-    "cod":"1000"
+    "codigo":108
 });
 
 //inserindo com relacionamento --usuario tem endereco
