@@ -195,3 +195,4 @@ npm i mongodb --save        -servidor do mongo
 npm i mongod --save         -banco
 npm i nodemon --save        - servidor para rodar a aplicação node
 
+nodemon server.js --startando o server criado
