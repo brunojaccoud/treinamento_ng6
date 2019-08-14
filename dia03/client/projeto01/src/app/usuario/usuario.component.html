@@ -4,18 +4,62 @@
 <h2>Usuário</h2>
 <br>
 
-<label>Código:</label>
-<input type="number" #codigo [(ngModel)]='usuario.codigo' placeholder="Digite o código"><br>
+<form [formGroup]="fg">
 
-<label>Nome:</label>
-<input type="string" #nome [(ngModel)]='usuario.nome' placeholder="Digite o nome"><br>
+    <label>Código:</label><br>
+    <input type="number" name="codigo" [(ngModel)]='usuario.codigo' placeholder="Digite o código" formControlName="codigo"><br>
+    <div *ngIf='codigo.invalid && codigo.touched'> <!-- Valida se o valor é invalido e se o campo já foi clicado -->
+        <div [ngSwitch]="codigo.errors != null" style="color:red">
+            <span *ngSwitchCase = "codigo.errors['required']">
+                <b>Preenchimento obrigatório</b>
+            </span>
+            <span *ngSwitchCase = "codigo.errors['min'] != null">
+                <b>Não pode ser menor que 20</b>
+            </span>
+            <span *ngSwitchCase = "codigo.errors['max'] != null">
+                <b>Não pode ser maior que 5000</b>
+            </span>
+        </div>
+    </div>
 
-<label>E-mail:</label>
-<input type="string" #email [(ngModel)]='usuario.email' placeholder="Digite o email"><br>
+    <label>Nome:</label><br>
+    <input type="string" name="nome" [(ngModel)]='usuario.nome' placeholder="Digite o nome" formControlName="nome"><br>
+    <div *ngIf='nome.invalid && nome.touched'> <!-- Valida se o valor é invalido e se o campo já foi clicado -->
+        <div [ngSwitch]="nome.errors != null" style="color:red">
+            <span *ngSwitchCase = "nome.errors['required']">
+                <b>Nome obrigatório</b>
+            </span>
+            <span *ngSwitchCase = "nome.errors['minlength'] != null">
+                <b>O nome deve conter no mínimo duas letras</b><br>
+            </span>
+            <span *ngSwitchCase = "nome.errors['maxlength'] != null">
+                <b>O nome deve conter no máximo 10 letras</b>
+            </span>
+            <span *ngSwitchCase = "nome.errors['pattern'] != null">
+                <b>O nome deve conter apenas letras</b>
+            </span>
+        </div>
+    </div>
 
-<br>
+    <label>E-mail:</label><br>
+    <input type="string" name="email" [(ngModel)]='usuario.email' placeholder="Digite o email" formControlName="email"><br>
+    <div *ngIf='email.invalid && email.touched'> <!-- Valida se o valor é invalido e se o campo já foi clicado -->
+        <div [ngSwitch]="email.errors != null" style="color:red">
+            <span *ngSwitchCase = "email.errors['required']">
+                <b>O preenchimento do e-mail é obrigatório</b>
+            </span>
+            <span *ngSwitchCase = "email.errors['email'] != null">
+                <b>E-mail fora do padrão</b>
+            </span>
+        </div>
+    </div>
 
-<button (click)='gravar();'>Gravar</button>
+    <br>
+
+    <button (click)='gravar();' [disabled]="fg.invalid">Gravar</button>
+
+</form>
+
 <br>
 
 <div *ngIf='msg'>
