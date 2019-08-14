@@ -1,0 +1,30 @@
+<h1>Projeto 02 Funcionarios Detalhes</h1>
+<hr>
+
+<h2>Lista de Funcionarios</h2>
+<li *ngFor='let item of funcionarios'>
+  {{item | json}}
+</li>
+
+
+<hr>
+<h2>Dados do funcionario com detalhes</h2>
+
+<div *ngFor='let item of funcionarios' style="width: 200px; border: 1px solid #ccc">
+<img [src]='item.foto' style="width: 100px;">
+<br>
+Nome: <input type="text" name="nome" [(ngModel)]='item.nome'>
+<br>
+Salario: <input type="number" name="salario" [(ngModel)]='item.salario'>
+<br>
+Bonus: <input type="number" name="bonus" [(ngModel)]='item.bonus'>
+<br>
+<button (click)='detalhar(item);'>Mostrar Detalhes</button>
+</div>
+
+<hr>
+<h2>Detalhes do Funcionário</h2>
+
+<app-funcionario [funcionario]='funcionarioSelecionado' [mensagem]='mensagemapp' [numero1]='numero1app' [numero2]='numero2app'>
+
+</app-funcionario>

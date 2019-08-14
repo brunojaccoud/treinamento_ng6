@@ -1,0 +1,29 @@
+<div class="col-md-6 mt-3">
+    <mdb-card>
+        <mdb-card-body>
+            <mdb-card-title>
+                <h4 class="text-center"><i class="fas fa-map-marker-alt ml-3"></i>Endereço</h4>
+            </mdb-card-title>
+
+            <div class="row">
+                <input type="number" #cep [(ngModel)]='endereco.cep' class="form-control col-md-8 ml-3" placeholder="Digite o CEP">
+                <button (click)='buscarCep();' mdbBtn color='success' size="sm" class="mb-2">Encontrar CEP</button>
+            </div>
+
+            <input type="text" #logradouro [(ngModel)]='endereco.logradouro' class="form-control mb-2" placeholder="Digite o logradouro">
+
+            <input type="text" #bairro [(ngModel)]='endereco.bairro' class="form-control mb-2" placeholder="Digite o bairo">
+
+            <input type="text" #cidade [(ngModel)]='endereco.cidade' class="form-control mb-2" placeholder="Digite a cidade">
+
+            <input type="text" #estado [(ngModel)]='endereco.estado' class="form-control" placeholder="Digite o estado">
+
+        </mdb-card-body>
+    </mdb-card>
+</div>
+
+
+
+<div *ngIf='msg'>
+    <b>Encontrado: {{endereco|json}}</b>
+</div>

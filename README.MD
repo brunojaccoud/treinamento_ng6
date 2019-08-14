@@ -65,3 +65,7 @@ https://fonts.google.com/ -- font inserida no styles.css do src
 
 Site de imagens
 https://wall.alphacoders.com/?lang=Portuguese
+
+MONGO DB
+sudo mongod --ativa o servidor do mongo
+sudo mongo --ativa o mongo
