@@ -1,1 +1,37 @@
-<router-outlet></router-outlet>
+<div class="menu">
+    <aside class="main_sidebar">
+        <ul>
+            <li class="active"><i class="fa fa-home"></i>
+                <a href="#">Home</a>
+            </li>
+            <li><i class="fa fa-sign-in-alt"></i>
+                <a href="#" routerLink='usuario'>Login</a>
+            </li>
+            <li><i class="fa fa-skull"></i>
+                <a href="#" routerLink='listagem'>Listagem</a>
+            </li>
+            <li><i class="fa fa-comments"></i>
+                <a href="#">Comentários <span class="badge badge-light ml-1">23</span></a>
+            </li>
+
+            <div class="dropdown">
+                <li><i class="fa fa-cogs"></i>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Configurações
+                    </a>
+                </li>
+                <div class="dropdown-content">
+                    <a class="dropdown-item" href="#">Minha conta</a>
+                    <a class="dropdown-item" href="#">Meus pagamentos</a>
+                    <a class="dropdown-item" href="#">Meus pedidos</a>
+                </div>
+            </div>
+
+        </ul>
+    </aside>
+</div>
+
+
+<div class="main">
+    <router-outlet></router-outlet>
+</div>

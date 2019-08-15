@@ -1,12 +1,19 @@
-<h1>Projeto Token LocalStorage</h1>
-<hr>
+<mdb-card class="animated wow fadeIn">
+        <mdb-card-body>
+            <mdb-card-title>
+                <h3 class="text-center">Projeto Token LocalStorage</h3>
+            </mdb-card-title>
 
-<label>Login:</label><br>
-<input type="text" #login [(ngModel)]='usuario.login' placeholder="Digite o login"><br>
+            <br>
+            <label>Login:</label>
+            <input type="text" #login [(ngModel)]='usuario.login' placeholder=" Digite o login" class="ml-2"><br><br>
+            
+            <label>Senha:</label>
+            <input type="password" #senha [(ngModel)]='usuario.senha' placeholder=" Digite a senha" class="ml-2"><br><br>
+            
+            <button (click)='logar();'>Login</button>
+            <br>
+            {{usuario | json}}
+        </mdb-card-body>
 
-<label>Senha:</label><br>
-<input type="password" #senha [(ngModel)]='usuario.senha' placeholder="Digite a senha"><br>
-
-<button (click)='logar();'>Login</button>
-<br>
-{{usuario | json}}
+    </mdb-card>

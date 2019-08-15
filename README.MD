@@ -246,4 +246,7 @@ https://jwt.io
 
 https://imasters.com.br/back-end/autenticacao-json-web-token-jwt-em-node-js
 
+bibliotecas animated
+https://wowjs.uk/
+https://daneden.github.io/animate.css/
 
