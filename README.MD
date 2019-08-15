@@ -22,6 +22,7 @@ ng s -o
 ng s -o --port 1234
 
 no construtor só entram os valores que serão inseridos pelo usuário, as variáveis em que o valor é calculado não entram no construtor
+o construtor só serve para lógica e calculos relacionados à classe
 
 variável com + à esquerda (+i) reforça o type da mesma
 
