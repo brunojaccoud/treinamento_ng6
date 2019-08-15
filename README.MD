@@ -1,3 +1,5 @@
+#===================== DIA1 =====================#
+
 DOCUMENTAÇÃO ANGULAR
 https://angular.io/guide/
 
@@ -38,6 +40,9 @@ https://www.getpostman.com/ -- serve para testar o fluxo de dados e conexões de
 serviços --nome dos métodos em inglês
 class --nome dos métodos em português - os nomes não podem ser iguais
 
+**************************************************
+#===================== DIA2 =====================#
+
 material design
 https://mdbootstrap.com/docs/angular/css/colors/ -- info das bibliotecas
 
@@ -69,9 +74,11 @@ https://fonts.google.com/ -- font inserida no styles.css do src
 Site de imagens
 https://wall.alphacoders.com/?lang=Portuguese
 
+
+**************************************************
 #===================== DIA3 =====================#
 
-***********************************************
+
 MONGO DB
 sudo mongod --ativa o servidor do mongo
 sudo mongo --ativa o banco
@@ -177,7 +184,7 @@ db.usuario.insertOne({
     "foto":"foto.jpg"
 });
 
-*******************************
+**************************************************
 para criar o package, digitar no terminal:
 npm init
 digitar as infos pedidas
@@ -228,4 +235,9 @@ https://console.firebase.google.com
 instalando firebase no projeto
 npm i firebase --save		-conecta ao firebase
 npm i angularfire2 --save	-conecta ao banco
+
+
+**************************************************
+#===================== DIA4 =====================#
+
 
