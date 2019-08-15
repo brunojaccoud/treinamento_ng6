@@ -1,0 +1,12 @@
+<h2>Listagem de usuários</h2>
+<hr>
+
+<li *ngFor='let item of usuarioLista'>
+    {{item | json}}
+</li>
+
+<br>
+<button (click)="estaLogado();">Chekin</button> - 
+<button (click)="logout();">Logoff</button>
+<br>
+Logado? {{status | json}}

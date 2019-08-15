@@ -5,6 +5,4 @@ export class Usuario{
     senha: string;
     token: string;
 
-    
-
 }

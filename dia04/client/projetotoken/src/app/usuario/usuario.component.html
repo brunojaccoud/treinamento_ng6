@@ -1,0 +1,12 @@
+<h1>Projeto Token LocalStorage</h1>
+<hr>
+
+<label>Login:</label><br>
+<input type="text" #login [(ngModel)]='usuario.login' placeholder="Digite o login"><br>
+
+<label>Senha:</label><br>
+<input type="password" #senha [(ngModel)]='usuario.senha' placeholder="Digite a senha"><br>
+
+<button (click)='logar();'>Login</button>
+<br>
+{{usuario | json}}

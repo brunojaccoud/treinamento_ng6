@@ -21,6 +21,9 @@ export class UsuarioService{
             localStorage.setItem('tokenizer', res.token);
             //mas pega o campo token e joga em localStorage(SET)
             console.log(res);
+            alert('Está logado' + JSON.stringify(res));
+            this.router.navigateByUrl(`/listagem`);
+            return res;
         }));
 
     }
@@ -29,7 +32,17 @@ export class UsuarioService{
     public lisAuthentication(){
         let header = new HttpHeaders(); //habilita o uso de cabeçalho
         header = header.append('authorization', `bearer ${localStorage.getItem('tokenizer')}`); //verifica a autorização do server e através do bearer pega (GET) o token
-        return this.http.get<Usuario[]>(`${URL2}`, {headers: header});
+        return this.http.get<Usuario[]>(`${URL2}`, {headers: header}); //RETORNA A LISTA
+    }
+
+    //CONFERE SE ESTÁ LOGADO
+    public isLogado(): boolean {
+        return localStorage.getItem('tokenizer') != null;
+    }
+
+    public logoff(){
+        localStorage.removeItem('tokenizer');
+        return this.router.navigateByUrl('/usuario');
     }
 
 }
