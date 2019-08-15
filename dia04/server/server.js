@@ -23,7 +23,7 @@ app.use(body.json()); //FORMATO JSON
 //autorização - o usuaŕio é autorizado a entrar?
 app.use('/adm', function(req, res, next){
     let erro = {success: false, msg: 'Erro de autenticação'};
-    let authorization = req.header["authorization"];
+    let authorization = req.headers["authorization"];
     if(authorization){
         let token = authorization.split(' ')[1];
         console.log(JSON.stringify(authorization));
