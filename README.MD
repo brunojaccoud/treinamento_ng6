@@ -51,7 +51,7 @@ https://mdbootstrap.com/docs/angular/css/colors/ -- info das bibliotecas
 npm i npm-registry-client
 
 //ADICIONAR O MATERIAL DESIGN AO PROJETO
-ng add angular-bootstrap-md --comando disponível a partir do angular8 - adiciona todas as bibliotecas no angular.json
+ng add angular-bootstrap-md --add = comando disponível a partir do angular8 - adiciona todas as bibliotecas no angular.json
 
 https://fontawesome.com/ --biblioteca de ícones (instalada com o bootstrap-md)
 
