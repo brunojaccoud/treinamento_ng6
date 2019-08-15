@@ -236,8 +236,12 @@ instalando firebase no projeto
 npm i firebase --save		-conecta ao firebase
 npm i angularfire2 --save	-conecta ao banco
 
+<<<<<<< HEAD
 
 **************************************************
 #===================== DIA4 =====================#
 
 
+=======
+l
+>>>>>>> f74db37af188ef84bfa559cd12c0486033628d87
