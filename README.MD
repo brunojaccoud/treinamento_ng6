@@ -229,3 +229,4 @@ instalando firebase no projeto
 npm i firebase --save		-conecta ao firebase
 npm i angularfire2 --save	-conecta ao banco
 
+l
