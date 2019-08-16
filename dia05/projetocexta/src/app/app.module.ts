@@ -9,6 +9,8 @@ import { CestaComponent } from './cesta/cesta.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from "@angular/forms";
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from "@angular/fire";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ProdutoService],
   bootstrap: [AppComponent]

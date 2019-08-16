@@ -1,26 +1,37 @@
-<h2>Carrinho de compras</h2>
-<hr>
-
-<table>
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Imagem</th>
-            <th>Preço</th>
-            <th> </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor='let item of produtosCesta; index as i'>
-            <td>{{item.nome}}</td>
-            <td><img [src]="item.imagem" style="width: 100px;"></td>
-            <td>{{item.preco}}</td>
-            <td><button (click)="remover(i);">Remover</button></td>
-        </tr>
-    </tbody>
-</table>
-
-<button (click)="totalProdutos();">Finalizar</button>
-<div *ngIf="total != 0">
-    Total do carrinho: R${{total}}
-</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+</style>
+<div class="container-fluid" style="margin-top: 90px; font-family: 'Permanent Marker', cursive;">
+        
+            <h5><b  style="font-family: 'Permanent Marker', cursive;">Carrinho de compras</b></h5>
+            <hr>
+        
+            <div class="row"  style="font-family: 'Permanent Marker', cursive;">
+                <div class="col-md-8">
+                    <div *ngFor='let item of produtosCesta; index as i'>
+                        <mdb-card class="mb-3">
+                            <mdb-card-body>
+                                <img [src]='item.imagem' style="width:100px;">
+                                {{item.nome}} - R${{item.preco}}
+                                <button (click)='remover(i);' style="float:right; margin-top: 50px;" 
+                                mdbBtn mdbWavesEffect
+                                    color='warning' size='sm'>Remover</button>
+                            </mdb-card-body>
+                        </mdb-card>
+                    </div>
+                </div>
+                <div class="col-md-4"  style="font-family: 'Permanent Marker', cursive;">
+                    <mdb-card class="bg-light">
+                        <mdb-card-body>
+                            <button (click)='totalProdutos();' mdbBtn mdbWavesEffect color='success' block='true'>Finalizar</button>
+                            <br>
+                            <div *ngIf='total != 0'>
+                                Total do carrinho: R$ {{total}}
+                            </div>
+                        </mdb-card-body>
+                    </mdb-card>
+                </div>
+            </div>
+        
+        
+        </div>

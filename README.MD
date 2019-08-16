@@ -259,3 +259,58 @@ Constantes são sempre declaradas com letra maiúscula
 
 site de icones
 https://www.iconfinder.com/
+
+
+FIREBASE
+
+instalar
+npm i firebase-tools
+npm i firebase
+npm i angularfire2 --save
+npm i firebase @angular/fire --save ---se tudo der errado
+alias firebase="`npm config get prefix`/bin/firebase"
+
+SCRIPT retirado do firebase da part de app - a parte de config deve ser incluída em environments.ts e prod:
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBepch1pGKovgahQpiQLbnYCdbJ222BL38",
+    authDomain: "bmjda-ng8.firebaseapp.com",
+    databaseURL: "https://bmjda-ng8.firebaseio.com",
+    projectId: "bmjda-ng8",
+    storageBucket: "",
+    messagingSenderId: "920661244077",
+    appId: "1:920661244077:web:2351f7f7c519ed9e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+----------------- DEPLOY -----------------
+firebase login
+n
+se for deslogar: firebase logout
+
+ng build --prod
+
+firebase init
+•   Y para continua o processo
+•   Selecionar hosting com a tecla espaço
+•   Selecionar projeto ou create a new Project (se não aparecer)
+•   Public dist/nome_do_projeto
+•   Y para criar
+•   N para sobrescrever o index
+
+firebase use --add
+selecionar o seu projeto
+reescrever o nome do projeto
+
+firebase deploy
+

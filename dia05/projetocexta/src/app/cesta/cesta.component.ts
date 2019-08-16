@@ -30,7 +30,7 @@ export class CestaComponent implements OnInit {
   public remover(index: number){
     this.service.removerProduto(index);
     console.log("Listagem", this.listagemCesta);
-    alert(this.produtosCesta.length);
+    //alert(this.produtosCesta.length);
     if(this.produtosCesta.length == 0){ //se a cesta esta vazia = 0
       this.total = 0;
     }
