@@ -17,7 +17,13 @@
                         <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/cart-256.png" style="width: 30px;" class="mr-2"> <mdb-badge pill="true" warning="true" style="font-family: 'Permanent Marker', cursive;">{{countCesta}}</mdb-badge>
                     </a>
             </li>
+            <li class="nav-item active mt-2">
+                    <a class="nav-link mr-3" routerLink="login" routerLinkActive="active"  style="font-family: 'Permanent Marker', cursive;">Login</a>
+            </li>
         </ul>
+        <li class="nav-item mt-2" style="list-style: none;">
+            <a (click)='sair();' class="mr-5">Sair<i class="fas fa-sign-out-alt ml-2"></i></a>
+        </li>
     </nav>
 </header>
 

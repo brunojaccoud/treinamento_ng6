@@ -1,3 +1,4 @@
+import { LoginService } from './service/login.service';
 import { ProdutoService } from './service/produto.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,22 +12,30 @@ import { FormsModule } from "@angular/forms";
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from "@angular/fire";
+import { HttpClientModule } from "@angular/common/http";
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { LoginComponent } from './login/login.component';
+import { ErroComponent } from './erro/erro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     CestaComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    ErroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    HttpClientModule,
+    AngularFireAuthModule
   ],
-  providers: [ProdutoService],
+  providers: [ProdutoService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

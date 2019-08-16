@@ -1,3 +1,4 @@
+import { LoginService } from './service/login.service';
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from 'src/app/service/produto.service';
 
@@ -11,15 +12,20 @@ export class AppComponent implements OnInit{
   //variáveld de contagem da cesta
   countCesta: number = 0;
 
-  constructor(private service: ProdutoService){
+  constructor(private service: ProdutoService, private servLogin: LoginService){
 
   }
 
   //inicializa já mostrando a quantidade de produtos na cesta
-  ngOnInit(){
+  ngOnInit(): void{
     this.service.quantidade().subscribe(res => {
       this.countCesta = res;
     })
+  }
+
+  //método de logout
+  sair(){
+    this.servLogin.logout();
   }
   
 }

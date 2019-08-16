@@ -1,0 +1,18 @@
+<div class="container-fluid" style="margin-top: 110px;">
+    <div class="col-md-6 offset-md-3">
+        <mdb-card>
+            <mdb-card-body>
+                <mdb-card-title class="text-center"><h3>Formulário de login</h3></mdb-card-title>
+                <br>
+                <label>Email:</label>
+                <input type="email" #email [(ngModel)]="login.email" placeholder="Digite o email" class="form-control mb-3" title="Digite o e-mail cadastrado">
+                
+                <label>Senha:</label><br>
+                <input type="password" #senha [(ngModel)]="login.senha" placeholder="Digite a senha" class="form-control mb-3" title="Digite o e-mail cadastrado"><br><br>
+                
+                <button (click)="entrarLogin();" mdbBtn color="info" block="true" size="sm">Logar</button>
+
+            </mdb-card-body>
+        </mdb-card>
+    </div>
+</div>>
