@@ -1,0 +1,49 @@
+<div class="" style="margin-top: 80px;">
+
+    <div class="bg-dark text-white">
+        <marquee class="pt-1">
+            <i class="fas fa-dollar-sign" style="color: gold;"></i>
+            Compre Já
+            <i class="fas fa-dollar-sign" style="color: gold;"></i>
+        </marquee>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let item of produtoLista">
+                <mdb-card class="mb-3">
+                    <mdb-card-body>
+                        <img [src]='item.imagem' style="width: 150px" title={{item.descricao}}><br>
+                        <b>{{item.nome}}</b><br>
+                        R${{item.preco}}<br>
+                        <button (click)='addCesta(item);' mdbBtn mdbWavesEffect color="primary" block="true" class="sm">Comprar<i clas="fas fas-cart-plus"></i></button>
+                    </mdb-card-body>
+                </mdb-card>
+            </div>
+        </div>
+    </div>
+
+    <h1>Produtos maravilhosos da Cexta</h1>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let item of produtoLista'>
+                <td>{{item.nome}}</td>
+                <td>{{item.descricao}}</td>
+                <td>{{item.preco}}</td>
+                <td><img [src]='item.imagem' style="width: 150px"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

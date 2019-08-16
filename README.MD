@@ -250,3 +250,12 @@ bibliotecas animated
 https://wowjs.uk/
 https://daneden.github.io/animate.css/
 
+
+**************************************************
+#===================== DIA5 =====================#
+
+
+Constantes são sempre declaradas com letra maiúscula
+
+site de icones
+https://www.iconfinder.com/
